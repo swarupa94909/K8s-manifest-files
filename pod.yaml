@@ -4,8 +4,8 @@ metadata:
   name: meesho-pod
 spec: 
   containers:
-    - name: meesho-cont
-      image: docker pull swarupa1506/track-app-web:v1.1.0
+    - name: web
+      image: nginx:latest
       ports:
         - containerPort: 80
         
