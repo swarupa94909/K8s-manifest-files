@@ -5,7 +5,7 @@ metadata:
 spec: 
   containers:
     - name: meesho-cont
-      image: docker pull swarupa1506/meesho-app-web:v1.1.0
+      image: docker pull swarupa1506/track-app-web:v1.1.0
       ports:
         - containerPort: 80
         
