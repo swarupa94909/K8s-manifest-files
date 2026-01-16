@@ -7,6 +7,6 @@ spec:
     - name: meesho-cont
       image: docker pull swarupa1506/meesho-app-web:v1.1.0
       ports:
-        - containerport: 80
+        - containerPort: 80
         
 
