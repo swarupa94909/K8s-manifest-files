@@ -7,8 +7,8 @@ spec:
     - name: sample-cont
       image: swarupa1506/web-app-java:v1.1.0
       ports:
-        - containerport:80
+        - containerPort:80
     - name: flower-app
       image: swarupa1506/meesho-app-web:v1.1.0
       ports:
-        - containerport: 3015 
+        - containerPort: 3015 
