@@ -9,5 +9,9 @@ spec:
       image: nginx:latest
       ports:
         - containerPort: 80
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d3f589a69f65b285ecf36e15f74c564ca9839f7c
 
