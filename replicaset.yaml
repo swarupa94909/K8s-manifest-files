@@ -5,11 +5,11 @@ metadata:
   labels:
     app: web
 spec: # Defines the behaviour of the replicaset
-replicas: 3
-selector: 
-  matchlabels:
-    web: flower
-template:
+  replicas: 3
+  selector: 
+    matchlabels:
+      web: flower
+  template:
   metadata: 
     labels:
       web: flower
