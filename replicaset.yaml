@@ -7,7 +7,7 @@ metadata:
 spec: # Defines the behaviour of the replicaset
   replicas: 3
   selector: 
-    matchlabels:
+    matchLabels:
       web: flower
   template:
     metadata: 
