@@ -27,8 +27,8 @@ metadata:
 spec:
   selector:
     app: tomcat
-ports: 
-  - protocol: TCP
-    port: 8082         # service port on which port number you want expose an application
-    targetPort: 8080 
-type: ClusterIP               
+  ports: 
+    - protocol: TCP
+      port: 8082         # service port on which port number you want expose an application
+      targetPort: 8080 
+  type: ClusterIP               
