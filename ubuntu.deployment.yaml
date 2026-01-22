@@ -25,7 +25,8 @@ kind: Service
 metadata:
   name: ubuntu-svc
 spec:
-  app: ubuntu
+  selector:
+    app: ubuntu
 ports: 
   - protocol: TCP
     port: 82                              # service port on which port number you want expose an application
