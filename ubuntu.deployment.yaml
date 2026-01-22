@@ -23,11 +23,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: ubuntu-service
+  name: ubuntu-svc
 spec:
   app: ubuntu
 ports: 
   - protocol: TCP
     port: 82                              # service port on which port number you want expose an application
-    targetport: 81 
+    targetPort: 81 
 type: ClusterIP               
