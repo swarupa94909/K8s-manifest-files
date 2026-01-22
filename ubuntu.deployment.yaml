@@ -22,7 +22,7 @@ spec:
 ---
 apiVersion: v1
 kind: Service
-metadeta:
+metadata:
   name: ubuntu-service
 spec:
   app: ubuntu
