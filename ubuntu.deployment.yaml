@@ -19,3 +19,15 @@ spec:
           image: ubuntu:resolute-20260106.1
           ports:
             - containerPort: 81
+---
+apiVersion: v1
+kind: Service
+metadeta:
+  name: ubuntu-service
+spec:
+  app: ubuntu
+ports: 
+  - protocol: TCP
+    port: 82                              # service port on which port number you want expose an application
+    targetport: 81 
+type: ClusterIP               
