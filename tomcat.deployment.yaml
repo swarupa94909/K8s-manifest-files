@@ -8,27 +8,27 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: buntu
+      app: tomcat
   template: 
     metadata:
       labels:
-        app: buntu
+        app: tomcat
     spec:
       containers:
-        - name: ubuntu-cont
-          image: ubuntu:resolute-20260106.1
+        - name: tomcat-cont
+          image: tomcat:9.0.113-jdk17
           ports:
             - containerPort: 81
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: ubuntu-svc
+  name: tomcat-svc
 spec:
   selector:
-    app: ubuntu
+    app: tomcat
 ports: 
   - protocol: TCP
-    port: 82                              # service port on which port number you want expose an application
-    targetPort: 81 
+    port: 8082         # service port on which port number you want expose an application
+    targetPort: 8080 
 type: ClusterIP               
