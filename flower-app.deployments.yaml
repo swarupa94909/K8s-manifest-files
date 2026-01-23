@@ -29,8 +29,8 @@ spec:
     app: web
   ports:
     - protocol: TCP
-      port: 81
-      targetPort: 80
+      port: 81            # service port on which port number you want expose an application
+      targetPort: 80      # pod/container port number
   type: NodePort  
   
 
