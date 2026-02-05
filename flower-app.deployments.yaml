@@ -8,11 +8,11 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: web
+      app: flower
   template: 
     metadata:
       labels:
-        app: web
+        app: flower
     spec:
       containers:
         - name: flower-app-deployment
